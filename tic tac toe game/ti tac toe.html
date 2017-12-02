@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Javascript,Tic Tac Toe Game">
+  <meta name="keywords" content="Javascript,Tic Tac Toe Game">
+  <meta name="author" content="Jason Zheng">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src = "js.js"></script>
+</head>
+
+<body>
+<div id = "outerwrapper">
+  <div id = "player1turn"></div>
+  <div id = "player2turn"></div>
+  <div id = "winscontainer">
+  <div id = "player1wins" class = "wins">
+   <span id = "player1score">0</span><br>
+    <span>Player1<span>
+  </div>
+    
+   <div id = "player2wins" class = "wins">
+    <span id = "player2score">0</span><br>
+    <span id = "player2Name"><span>
+  </div>
+      </div>
+  
+  <div id = "reset"><button>Reset All</button></div>
+  <div id = "innerwrapper">
+    <div id = "interaction">
+    <p class = "text-center" id = "displaytext">How do you want to play?</p>
+      </br>
+      <div class = "row buttonwrapper">
+        <div class = "col-xs-6 text-center">
+    <button id = "oneplayer" value = "1">One Player</button>
+          </div>
+            <div class = "col-xs-6 text-center">
+    <button id = "twoplayer" value = "2">Two Player</button>
+            </div>
+      </div>
+    </div>
+     <div id = "result"></div>
+  </div> 
+</div>
+</body>
+</html>
