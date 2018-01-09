@@ -500,7 +500,8 @@ $(document).ready(function () {
     }
     //logic after grid is clicked
     var gameGridOnClicked = function (ele, sym) {
-        $(ele).children().text(sym).css('display', 'none').fadeIn(2300);
+        // $(ele).children().text(sym).css('display','none').fadeIn(2300);
+        $(ele).children().text(sym)
         var pos = $(ele).attr('id');
         if (pos < 3) gamearr[0][pos] = sym;
         else if (pos < 6) gamearr[1][pos - 3] = sym;
